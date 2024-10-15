@@ -1,0 +1,59 @@
+# Fichiers et répertoires généraux
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+*.swp
+*~
+
+# Environnement virtuel
+env/
+venv/
+ENV/
+VENV/
+
+# Fichiers de configuration et variables d'environnement
+*.env
+.env.*
+*.local
+
+# Fichiers de log
+*.log
+logs/
+
+# Fichiers de base de données
+db.sqlite3
+
+# Django files
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorer les fichiers statiques générés
+staticfiles/
+static/
+media/
+
+# Ignorer les migrations sauf les fichiers __init__.py
+*/migrations/*.py
+*/migrations/*.pyc
+!*/migrations/__init__.py
+
+# Ignorer les fixtures de test, à moins que tu veuilles les versionner
+*.json
+
+# IDEs/Editors
+.idea/
+.vscode/
+*.iml
+.project
+.pydevproject
+
+# Cache de tests et outils de couverture de code
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
