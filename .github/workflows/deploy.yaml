@@ -7,6 +7,7 @@ on:
 
 jobs:
     ghcr:
+        name: Docker
         runs-on: ubuntu-latest
         permissions:
             contents: write
@@ -27,7 +28,18 @@ jobs:
         
         - name: Build and push Api Docker image
           run: |
-            docker build -t ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest ./backend
+            docker build \
+              --build-arg SECRET_KEY="${{ secrets.SECRET_KEY }}" \
+              --build-arg DEBUG="${{ secrets.DEBUG }}" \
+              --build-arg ALLOWED_HOSTS="${{ secrets.ALLOWED_HOSTS }}" \
+              --build-arg CSRF_TRUSTED_ORIGINS="${{ secrets.CSRF_TRUSTED_ORIGINS }}" \
+              --build-arg DEFAULT_API_URL="${{ secrets.DEFAULT_API_URL }}" \
+              --build-arg POSTGRES_DB="${{ secrets.POSTGRES_DB }}" \
+              --build-arg POSTGRES_USER="${{ secrets.POSTGRES_USER }}" \
+              --build-arg POSTGRES_PASSWORD="${{ secrets.POSTGRES_PASSWORD }}" \
+              --build-arg POSTGRES_HOST="${{ secrets.POSTGRES_HOST }}" \
+              --build-arg POSTGRES_PORT="${{ secrets.POSTGRES_PORT }}" \
+              -t ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest ./backend
             docker push ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest
 
         - name: Logout from GHCR
@@ -50,16 +62,6 @@ jobs:
 
                     docker login ghcr.io --username ${{ github.actor }} --password-stdin <<< "${{ secrets.GITHUB_TOKEN }}"     
                     docker pull ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest
-                    export SECRET_KEY="${{ secrets.SECRET_KEY }}"
-                    export DEBUG="${{ secrets.DEBUG }}"
-                    export ALLOWED_HOSTS="${{ secrets.ALLOWED_HOSTS }}"
-                    export CSRF_TRUSTED_ORIGINS="${{ secrets.CSRF_TRUSTED_ORIGINS }}"
-                    export DEFAULT_API_URL="${{ secrets.DEFAULT_API_URL }}"
-                    export POSTGRES_DB="${{ secrets.POSTGRES_DB }}"
-                    export POSTGRES_USER="${{ secrets.POSTGRES_USER }}"
-                    export POSTGRES_PASSWORD="${{ secrets.POSTGRES_PASSWORD }}"
-                    export POSTGRES_HOST="${{ secrets.POSTGRES_HOST }}"
-                    export POSTGRES_PORT="${{ secrets.POSTGRES_PORT }}"
 
                     docker stack deploy --detach=false -c compose.prod.yaml todolist_stack
 
