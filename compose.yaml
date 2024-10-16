@@ -5,8 +5,13 @@ services:
       context: ./backend
     env_file:
       - ./backend/.env
+      
     ports:
       - "4003:8000"
+
     volumes:
       - ./backend:/app
-    command: python manage.py runserver 0.0.0.0:8000
+      - ./backend/static:/app/static
+
+    command: gunicorn task_manager.wsgi:application --bind 0.0.0.0:8000
+    # command: python manage.py runserver 0.0.0.0:8000
