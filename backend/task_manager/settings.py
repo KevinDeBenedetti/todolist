@@ -171,7 +171,7 @@ SWAGGER_SETTINGS = {
         }
     },
     'USE_SESSION_AUTH': False,
-    'DEFAULT_API_URL': os.environ.get('DEFAULT_API_URL'),
+    'DEFAULT_API_URL': 'https://todolist.kevindb.dev/api/',
     'VALIDATOR': None,
     'cache_timeout': 0,
 }
