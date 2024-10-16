@@ -54,6 +54,7 @@ jobs:
                     export DEBUG="${{ secrets.DEBUG }}"
                     export ALLOWED_HOSTS="${{ secrets.ALLOWED_HOSTS }}"
                     export CSRF_TRUSTED_ORIGINS="${{ secrets.CSRF_TRUSTED_ORIGINS }}"
+                    export DEFAULT_API_URL="${{ secrets.DEFAULT_API_URL }}"
                     export POSTGRES_DB="${{ secrets.POSTGRES_DB }}"
                     export POSTGRES_USER="${{ secrets.POSTGRES_USER }}"
                     export POSTGRES_PASSWORD="${{ secrets.POSTGRES_PASSWORD }}"
