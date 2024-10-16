@@ -22,23 +22,21 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
 ### 1. Cloner le projet
 
-    ```sh
+    ```bash
     git clone https://github.com/KevinDeBenedetti/team_todolist.git
     cd team_todolist
     ```
 
-### 2. Configurer Supabase
+### 2. Configurer la base de données
 
-	1.	Créez un compte sur Supabase et un nouveau projet.
-	2.	Configurez une base de données PostgreSQL dans Supabase.
+	1.	Configurez une base de données PostgreSQL.
 	3.	Notez les informations de connexion à la base de données (nom de la base de données, utilisateur, mot de passe, hôte, et port).
-
 
 ### 3. Configuration des variables d’environnement
 
     Créez un fichier .env dans le dossier `backend` du projet et ajoutez-y les variables d’environnement nécessaires pour votre projet, en remplaçant les valeurs avec les informations de Supabase :
 
-    ```sh
+    ```bash
     SECRET_KEY=your_secret_key
     DEBUG=False
     ALLOWED_HOSTS=localhost, your-domain.com
@@ -58,13 +56,13 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
     Tirer l’image Docker
 
-    ```sh
+    ```bash
     docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
     ```
 
     Démarrer les services avec Docker Compose
 
-    ```sh
+    ```bash
     docker-compose up -d
     ```
 
