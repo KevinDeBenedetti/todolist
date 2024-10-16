@@ -34,7 +34,7 @@ cd team_todolist
 
 ### 3. Configuration des variables d’environnement
 
-Créez un fichier .env dans le dossier `backend` du projet et ajoutez-y les variables d’environnement nécessaires pour votre projet, en remplaçant les valeurs avec les informations de Supabase :
+Créez un fichier .env dans le dossier `backend` du projet et ajoutez-y les variables d’environnement nécessaires pour votre projet, en remplaçant les valeurs avec les informations de votre base de données :
 
 ```bash
 SECRET_KEY=your_secret_key
@@ -60,7 +60,7 @@ Tirer l’image Docker
 docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
 ```
 
-    Démarrer les services avec Docker Compose
+Démarrer les services avec Docker Compose
 
 ```bash
 docker-compose up -d
@@ -68,23 +68,23 @@ docker-compose up -d
 
 Cela va démarrer les services suivants :
 
-    - L’application Django (via Gunicorn) pour servir les pages web et l’API.
-    - La base de données PostgreSQL hébergée sur Supabase.
+- L’application Django (via Gunicorn) pour servir les pages web et l’API.
+- La base de données PostgreSQL hébergée sur Supabase.
 
 ### 5. Accéder à l’application
 
 #### Visualiser et trier les tâches : 
 
-    Accédez à la page de gestion des tâches à l’URL suivante : http://localhost:4003/tasks/
+Accédez à la page de gestion des tâches à l’URL suivante : http://localhost:4003/tasks/
 
 #### Accéder à l’API REST : 
 
-    L’API REST est disponible à l’adresse suivante : http://localhost:4003/api/
+L’API REST est disponible à l’adresse suivante : http://localhost:4003/api/
 
 #### Documentation Swagger UI :
 
-    La documentation interactive de l’API est accessible via Swagger UI : http://localhost:4003/swagger/
+La documentation interactive de l’API est accessible via Swagger UI : http://localhost:4003/swagger/
 
 #### Interface d’administration Django :
 
-    Pour accéder à l’interface d’administration, connectez-vous avec vos identifiants admin : http://localhost:4003/admin/
+Pour accéder à l’interface d’administration, connectez-vous avec vos identifiants admin : http://localhost:4003/admin/
