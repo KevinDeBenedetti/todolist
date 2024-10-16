@@ -31,9 +31,9 @@ db.sqlite3
 *.pyd
 
 # Ignorer les fichiers statiques générés
-staticfiles/
-static/
-media/
+# staticfiles/
+# static/
+# media/
 
 # Ignorer les migrations sauf les fichiers __init__.py
 */migrations/*.py
