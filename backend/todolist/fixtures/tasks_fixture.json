@@ -1,0 +1,562 @@
+[
+    {
+        "model": "todolist.task",
+        "pk": 1,
+        "fields": {
+            "title": "Préparer la réunion hebdomadaire",
+            "description": "Organiser l'ordre du jour et les documents pour la réunion.",
+            "completed": false,
+            "due_date": "2024-10-20",
+            "assigned_to": 1,
+            "priority": 3,
+            "created_at": "2024-10-01T10:00:00Z",
+            "updated_at": "2024-10-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 2,
+        "fields": {
+            "title": "Mettre à jour le site web",
+            "description": "Ajouter les actualités sur la page d'accueil.",
+            "completed": false,
+            "due_date": "2024-10-22",
+            "assigned_to": 2,
+            "priority": 2,
+            "created_at": "2024-10-02T10:00:00Z",
+            "updated_at": "2024-10-02T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 3,
+        "fields": {
+            "title": "Suivi des projets clients",
+            "description": "Vérifier l'avancement de tous les projets en cours.",
+            "completed": true,
+            "due_date": "2024-10-05",
+            "assigned_to": 3,
+            "priority": 1,
+            "created_at": "2024-09-29T10:00:00Z",
+            "updated_at": "2024-09-29T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 4,
+        "fields": {
+            "title": "Backup des serveurs",
+            "description": "Lancer un backup complet des serveurs.",
+            "completed": false,
+            "due_date": "2024-10-18",
+            "assigned_to": 4,
+            "priority": 5,
+            "created_at": "2024-10-01T11:00:00Z",
+            "updated_at": "2024-10-01T11:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 5,
+        "fields": {
+            "title": "Formation interne sur la sécurité",
+            "description": "Organiser une session de formation sur la sécurité des données.",
+            "completed": false,
+            "due_date": "2024-11-01",
+            "assigned_to": 1,
+            "priority": 4,
+            "created_at": "2024-10-03T10:00:00Z",
+            "updated_at": "2024-10-03T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 6,
+        "fields": {
+            "title": "Audit de sécurité",
+            "description": "Réaliser un audit complet du réseau et des accès.",
+            "completed": false,
+            "due_date": "2024-10-30",
+            "assigned_to": 2,
+            "priority": 4,
+            "created_at": "2024-10-04T12:00:00Z",
+            "updated_at": "2024-10-04T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 7,
+        "fields": {
+            "title": "Révision des contrats fournisseurs",
+            "description": "Analyser les contrats pour les services en cours.",
+            "completed": true,
+            "due_date": "2024-10-15",
+            "assigned_to": 3,
+            "priority": 2,
+            "created_at": "2024-10-01T14:00:00Z",
+            "updated_at": "2024-10-01T14:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 8,
+        "fields": {
+            "title": "Maintenance des bases de données",
+            "description": "Vérifier l'intégrité des bases de données et effectuer la maintenance.",
+            "completed": false,
+            "due_date": "2024-10-28",
+            "assigned_to": 4,
+            "priority": 3,
+            "created_at": "2024-10-02T12:00:00Z",
+            "updated_at": "2024-10-02T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 9,
+        "fields": {
+            "title": "Préparation du bilan financier",
+            "description": "Collecter les données pour le bilan trimestriel.",
+            "completed": false,
+            "due_date": "2024-11-10",
+            "assigned_to": 1,
+            "priority": 3,
+            "created_at": "2024-10-05T10:00:00Z",
+            "updated_at": "2024-10-05T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 10,
+        "fields": {
+            "title": "Planification du projet X",
+            "description": "Créer un calendrier de projet pour le lancement du projet X.",
+            "completed": true,
+            "due_date": "2024-09-25",
+            "assigned_to": 2,
+            "priority": 5,
+            "created_at": "2024-09-15T11:00:00Z",
+            "updated_at": "2024-09-15T11:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 11,
+        "fields": {
+            "title": "Mise en place des sauvegardes automatiques",
+            "description": "Configurer un système de sauvegardes automatiques pour tous les serveurs.",
+            "completed": false,
+            "due_date": "2024-10-25",
+            "assigned_to": 3,
+            "priority": 4,
+            "created_at": "2024-10-02T09:00:00Z",
+            "updated_at": "2024-10-02T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 12,
+        "fields": {
+            "title": "Révision de la documentation technique",
+            "description": "Mettre à jour la documentation technique pour la nouvelle version du logiciel.",
+            "completed": false,
+            "due_date": "2024-10-27",
+            "assigned_to": 4,
+            "priority": 3,
+            "created_at": "2024-10-03T13:00:00Z",
+            "updated_at": "2024-10-03T13:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 13,
+        "fields": {
+            "title": "Préparation du rapport d'audit",
+            "description": "Rédiger un rapport d'audit pour les clients A et B.",
+            "completed": false,
+            "due_date": "2024-11-01",
+            "assigned_to": 1,
+            "priority": 3,
+            "created_at": "2024-10-04T10:00:00Z",
+            "updated_at": "2024-10-04T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 14,
+        "fields": {
+            "title": "Mise à jour du CRM",
+            "description": "Vérifier et mettre à jour les informations clients dans le CRM.",
+            "completed": true,
+            "due_date": "2024-10-07",
+            "assigned_to": 2,
+            "priority": 2,
+            "created_at": "2024-10-01T12:00:00Z",
+            "updated_at": "2024-10-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 15,
+        "fields": {
+            "title": "Amélioration du système de ticketing",
+            "description": "Ajouter de nouvelles fonctionnalités au système de gestion des tickets.",
+            "completed": false,
+            "due_date": "2024-11-05",
+            "assigned_to": 3,
+            "priority": 4,
+            "created_at": "2024-10-02T10:00:00Z",
+            "updated_at": "2024-10-02T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 16,
+        "fields": {
+            "title": "Optimisation des performances du serveur",
+            "description": "Analyser et optimiser la configuration du serveur pour de meilleures performances.",
+            "completed": false,
+            "due_date": "2024-11-08",
+            "assigned_to": 4,
+            "priority": 5,
+            "created_at": "2024-10-02T14:00:00Z",
+            "updated_at": "2024-10-02T14:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 17,
+        "fields": {
+            "title": "Test de sécurité des applications",
+            "description": "Réaliser des tests de sécurité pour toutes les applications web en production.",
+            "completed": false,
+            "due_date": "2024-10-25",
+            "assigned_to": 1,
+            "priority": 5,
+            "created_at": "2024-10-03T09:00:00Z",
+            "updated_at": "2024-10-03T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 18,
+        "fields": {
+            "title": "Maintenance du réseau interne",
+            "description": "Effectuer une vérification complète de l'infrastructure réseau.",
+            "completed": false,
+            "due_date": "2024-10-29",
+            "assigned_to": 2,
+            "priority": 3,
+            "created_at": "2024-10-03T12:00:00Z",
+            "updated_at": "2024-10-03T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 19,
+        "fields": {
+            "title": "Déploiement de l'application mobile",
+            "description": "Préparer la version mobile de l'application pour le déploiement en production.",
+            "completed": true,
+            "due_date": "2024-10-20",
+            "assigned_to": 3,
+            "priority": 4,
+            "created_at": "2024-10-04T10:00:00Z",
+            "updated_at": "2024-10-04T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 20,
+        "fields": {
+            "title": "Formation sur les nouvelles technologies",
+            "description": "Organiser une formation interne sur les dernières technologies de développement.",
+            "completed": false,
+            "due_date": "2024-11-03",
+            "assigned_to": 4,
+            "priority": 3,
+            "created_at": "2024-10-05T09:00:00Z",
+            "updated_at": "2024-10-05T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 21,
+        "fields": {
+            "title": "Migration des bases de données",
+            "description": "Préparer et effectuer la migration vers une nouvelle base de données.",
+            "completed": false,
+            "due_date": "2024-11-15",
+            "assigned_to": 1,
+            "priority": 4,
+            "created_at": "2024-10-06T12:00:00Z",
+            "updated_at": "2024-10-06T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 22,
+        "fields": {
+            "title": "Mise en place d'une architecture microservices",
+            "description": "Planifier la mise en place d'une architecture microservices pour l'application.",
+            "completed": true,
+            "due_date": "2024-10-10",
+            "assigned_to": 2,
+            "priority": 5,
+            "created_at": "2024-09-30T10:00:00Z",
+            "updated_at": "2024-09-30T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 23,
+        "fields": {
+            "title": "Support technique pour les clients",
+            "description": "Répondre aux questions et problèmes techniques des clients.",
+            "completed": false,
+            "due_date": "2024-10-22",
+            "assigned_to": 3,
+            "priority": 2,
+            "created_at": "2024-10-02T09:00:00Z",
+            "updated_at": "2024-10-02T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 24,
+        "fields": {
+            "title": "Mise en conformité RGPD",
+            "description": "Vérifier que toutes les données clients respectent les normes RGPD.",
+            "completed": false,
+            "due_date": "2024-11-01",
+            "assigned_to": 4,
+            "priority": 3,
+            "created_at": "2024-10-04T09:00:00Z",
+            "updated_at": "2024-10-04T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 25,
+        "fields": {
+            "title": "Optimisation du SEO",
+            "description": "Améliorer le SEO pour augmenter le trafic sur le site web.",
+            "completed": true,
+            "due_date": "2024-09-25",
+            "assigned_to": 1,
+            "priority": 2,
+            "created_at": "2024-09-15T12:00:00Z",
+            "updated_at": "2024-09-15T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 26,
+        "fields": {
+            "title": "Audit de la sécurité réseau",
+            "description": "Effectuer un audit complet de la sécurité du réseau d'entreprise.",
+            "completed": false,
+            "due_date": "2024-10-30",
+            "assigned_to": 2,
+            "priority": 5,
+            "created_at": "2024-10-03T11:00:00Z",
+            "updated_at": "2024-10-03T11:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 27,
+        "fields": {
+            "title": "Suivi des performances des campagnes marketing",
+            "description": "Analyser les résultats des campagnes marketing pour ajuster les stratégies.",
+            "completed": false,
+            "due_date": "2024-11-02",
+            "assigned_to": 3,
+            "priority": 4,
+            "created_at": "2024-10-06T13:00:00Z",
+            "updated_at": "2024-10-06T13:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 28,
+        "fields": {
+            "title": "Préparation d'une présentation pour les investisseurs",
+            "description": "Créer une présentation convaincante pour les futurs investisseurs.",
+            "completed": true,
+            "due_date": "2024-10-05",
+            "assigned_to": 4,
+            "priority": 5,
+            "created_at": "2024-09-20T10:00:00Z",
+            "updated_at": "2024-09-20T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 29,
+        "fields": {
+            "title": "Recrutement d'un nouveau développeur",
+            "description": "Rédiger et publier une offre d'emploi pour un développeur backend.",
+            "completed": false,
+            "due_date": "2024-11-15",
+            "assigned_to": 1,
+            "priority": 4,
+            "created_at": "2024-10-05T11:00:00Z",
+            "updated_at": "2024-10-05T11:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 30,
+        "fields": {
+            "title": "Analyse des retours clients",
+            "description": "Collecter et analyser les retours des clients sur les produits récents.",
+            "completed": true,
+            "due_date": "2024-10-15",
+            "assigned_to": 2,
+            "priority": 3,
+            "created_at": "2024-10-01T14:00:00Z",
+            "updated_at": "2024-10-01T14:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 31,
+        "fields": {
+            "title": "Migration des services vers le cloud",
+            "description": "Préparer la migration des services vers une infrastructure cloud.",
+            "completed": false,
+            "due_date": "2024-11-10",
+            "assigned_to": 3,
+            "priority": 4,
+            "created_at": "2024-10-06T09:00:00Z",
+            "updated_at": "2024-10-06T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 32,
+        "fields": {
+            "title": "Gestion des stocks",
+            "description": "Mettre à jour les stocks dans le système de gestion.",
+            "completed": true,
+            "due_date": "2024-09-28",
+            "assigned_to": 4,
+            "priority": 2,
+            "created_at": "2024-09-18T12:00:00Z",
+            "updated_at": "2024-09-18T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 33,
+        "fields": {
+            "title": "Lancement d'un nouveau produit",
+            "description": "Planifier le lancement du nouveau produit prévu pour novembre.",
+            "completed": false,
+            "due_date": "2024-11-20",
+            "assigned_to": 1,
+            "priority": 5,
+            "created_at": "2024-10-10T09:00:00Z",
+            "updated_at": "2024-10-10T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 34,
+        "fields": {
+            "title": "Analyse concurrentielle",
+            "description": "Analyser les dernières stratégies des concurrents pour ajuster les campagnes.",
+            "completed": false,
+            "due_date": "2024-11-07",
+            "assigned_to": 2,
+            "priority": 3,
+            "created_at": "2024-10-09T12:00:00Z",
+            "updated_at": "2024-10-09T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 35,
+        "fields": {
+            "title": "Campagne publicitaire",
+            "description": "Lancer une nouvelle campagne publicitaire pour le Black Friday.",
+            "completed": false,
+            "due_date": "2024-11-15",
+            "assigned_to": 3,
+            "priority": 5,
+            "created_at": "2024-10-09T14:00:00Z",
+            "updated_at": "2024-10-09T14:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 36,
+        "fields": {
+            "title": "Validation des contrats clients",
+            "description": "Valider les contrats pour les clients nouveaux et existants.",
+            "completed": true,
+            "due_date": "2024-10-25",
+            "assigned_to": 4,
+            "priority": 4,
+            "created_at": "2024-10-01T10:00:00Z",
+            "updated_at": "2024-10-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 37,
+        "fields": {
+            "title": "Mise en place d'un programme de fidélité",
+            "description": "Créer et implémenter un programme de fidélité pour les clients réguliers.",
+            "completed": false,
+            "due_date": "2024-11-25",
+            "assigned_to": 1,
+            "priority": 4,
+            "created_at": "2024-10-11T12:00:00Z",
+            "updated_at": "2024-10-11T12:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 38,
+        "fields": {
+            "title": "Suivi des retours produits",
+            "description": "Analyser et traiter les retours des produits défectueux ou non conformes.",
+            "completed": true,
+            "due_date": "2024-10-12",
+            "assigned_to": 2,
+            "priority": 2,
+            "created_at": "2024-10-02T09:00:00Z",
+            "updated_at": "2024-10-02T09:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 39,
+        "fields": {
+            "title": "Optimisation de la chaîne logistique",
+            "description": "Revoir les processus logistiques pour réduire les coûts et améliorer l'efficacité.",
+            "completed": false,
+            "due_date": "2024-11-30",
+            "assigned_to": 3,
+            "priority": 5,
+            "created_at": "2024-10-12T10:00:00Z",
+            "updated_at": "2024-10-12T10:00:00Z"
+        }
+    },
+    {
+        "model": "todolist.task",
+        "pk": 40,
+        "fields": {
+            "title": "Refonte du site e-commerce",
+            "description": "Redévelopper le site e-commerce avec un design plus moderne et une meilleure UX.",
+            "completed": false,
+            "due_date": "2024-12-05",
+            "assigned_to": 4,
+            "priority": 5,
+            "created_at": "2024-10-12T15:00:00Z",
+            "updated_at": "2024-10-12T15:00:00Z"
+        }
+    }
+]

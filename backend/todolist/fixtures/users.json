@@ -1,0 +1,62 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "alice",
+            "first_name": "Alice",
+            "last_name": "Durand",
+            "email": "alice@example.com",
+            "password": "pbkdf2_sha256$260000$abcd1234$examplepasswordhash", 
+            "is_staff": false,
+            "is_superuser": false,
+            "is_active": true,
+            "date_joined": "2024-01-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "bob",
+            "first_name": "Bob",
+            "last_name": "Martin",
+            "email": "bob@example.com",
+            "password": "pbkdf2_sha256$260000$abcd1234$examplepasswordhash", 
+            "is_staff": false,
+            "is_superuser": false,
+            "is_active": true,
+            "date_joined": "2024-01-02T10:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "charlie",
+            "first_name": "Charlie",
+            "last_name": "Lemoine",
+            "email": "charlie@example.com",
+            "password": "pbkdf2_sha256$260000$abcd1234$examplepasswordhash", 
+            "is_staff": false,
+            "is_superuser": false,
+            "is_active": true,
+            "date_joined": "2024-01-03T10:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "david",
+            "first_name": "David",
+            "last_name": "Dupont",
+            "email": "david@example.com",
+            "password": "pbkdf2_sha256$260000$abcd1234$examplepasswordhash", 
+            "is_staff": false,
+            "is_superuser": false,
+            "is_active": true,
+            "date_joined": "2024-01-04T10:00:00Z"
+        }
+    }
+]

@@ -40,9 +40,6 @@ media/
 */migrations/*.pyc
 !*/migrations/__init__.py
 
-# Ignorer les fixtures de test, à moins que tu veuilles les versionner
-*.json
-
 # IDEs/Editors
 .idea/
 .vscode/
