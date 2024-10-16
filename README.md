@@ -4,19 +4,19 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
 ## Fonctionnalités principales
 
-    - Gestion des tâches : Visualiser, trier et filtrer les tâches sur une interface utilisateur dédiée.
-    - API REST : Exposer des endpoints pour interagir avec les tâches via une API REST conforme à Django REST Framework.
-    - Swagger UI : Documentation interactive de l’API accessible via Swagger UI.
-    - Django : Interface admin pour gérer les tâches et utilisateurs via l’interface admin par défaut de Django.
+- Gestion des tâches : Visualiser, trier et filtrer les tâches sur une interface utilisateur dédiée.
+- API REST : Exposer des endpoints pour interagir avec les tâches via une API REST conforme à Django REST Framework.
+- Swagger UI : Documentation interactive de l’API accessible via Swagger UI.
+- Django : Interface admin pour gérer les tâches et utilisateurs via l’interface admin par défaut de Django.
 
 ## Prérequis
 
-    Avant de commencer, assurez-vous d’avoir installé les outils suivants sur votre machine :
+Avant de commencer, assurez-vous d’avoir installé les outils suivants sur votre machine :
 
-    - Docker
-    - Docker Compose
-    - Git
-    - Une base de données PostgreSQL
+- Docker
+- Docker Compose
+- Git
+- Une base de données PostgreSQL
 
 ## Installation
 
@@ -29,12 +29,12 @@ cd team_todolist
 
 ### 2. Configurer la base de données
 
-	1.	Configurez une base de données PostgreSQL.
-	3.	Notez les informations de connexion à la base de données (nom de la base de données, utilisateur, mot de passe, hôte, et port).
+1.	Configurez une base de données PostgreSQL.
+3.	Notez les informations de connexion à la base de données (nom de la base de données, utilisateur, mot de passe, hôte, et port).
 
 ### 3. Configuration des variables d’environnement
 
-    Créez un fichier .env dans le dossier `backend` du projet et ajoutez-y les variables d’environnement nécessaires pour votre projet, en remplaçant les valeurs avec les informations de Supabase :
+Créez un fichier .env dans le dossier `backend` du projet et ajoutez-y les variables d’environnement nécessaires pour votre projet, en remplaçant les valeurs avec les informations de Supabase :
 
 ```bash
 SECRET_KEY=your_secret_key
@@ -52,9 +52,9 @@ POSTGRES_PORT=5432
 
 ### 4. Utiliser l’image Docker prête à l’emploi depuis GHCR
 
-    L’image Docker du projet todolist est déjà disponible et prête à l’emploi sur GitHub Container Registry (GHCR). Vous pouvez la tirer directement et l’utiliser sans avoir à reconstruire l’image vous-même.
+L’image Docker du projet todolist est déjà disponible et prête à l’emploi sur GitHub Container Registry (GHCR). Vous pouvez la tirer directement et l’utiliser sans avoir à reconstruire l’image vous-même.
 
-    Tirer l’image Docker
+Tirer l’image Docker
 
 ```bash
 docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
@@ -66,10 +66,10 @@ docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
 docker-compose up -d
 ```
 
-    Cela va démarrer les services suivants :
+Cela va démarrer les services suivants :
 
-      - L’application Django (via Gunicorn) pour servir les pages web et l’API.
-      - La base de données PostgreSQL hébergée sur Supabase.
+    - L’application Django (via Gunicorn) pour servir les pages web et l’API.
+    - La base de données PostgreSQL hébergée sur Supabase.
 
 ### 5. Accéder à l’application
 
