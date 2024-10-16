@@ -16,7 +16,7 @@ Ce projet est une application web de gestion des tâches (todolist) développée
     - Docker
     - Docker Compose
     - Git
-    - Un compte Supabase pour la base de données PostgreSQL
+    - Une base de données PostgreSQL
 
 ## Installation
 
