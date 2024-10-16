@@ -22,10 +22,10 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
 ### 1. Cloner le projet
 
-    ```bash
-    git clone https://github.com/KevinDeBenedetti/team_todolist.git
-    cd team_todolist
-    ```
+```bash
+git clone https://github.com/KevinDeBenedetti/team_todolist.git
+cd team_todolist
+```
 
 ### 2. Configurer la base de données
 
@@ -36,19 +36,19 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
     Créez un fichier .env dans le dossier `backend` du projet et ajoutez-y les variables d’environnement nécessaires pour votre projet, en remplaçant les valeurs avec les informations de Supabase :
 
-    ```bash
-    SECRET_KEY=your_secret_key
-    DEBUG=False
-    ALLOWED_HOSTS=localhost, your-domain.com
-    CSRF_TRUSTED_ORIGINS=https://your-domain.com
-    DEFAULT_API_URL=https://your-domain.com/api/
+```bash
+SECRET_KEY=your_secret_key
+DEBUG=False
+ALLOWED_HOSTS=localhost, your-domain.com
+CSRF_TRUSTED_ORIGINS=https://your-domain.com
+DEFAULT_API_URL=https://your-domain.com/api/
 
-    POSTGRES_DB=your_db_name
-    POSTGRES_USER=your_db_user
-    POSTGRES_PASSWORD=your_db_password
-    POSTGRES_HOST=your_supabase_host
-    POSTGRES_PORT=5432
-    ```
+POSTGRES_DB=your_db_name
+POSTGRES_USER=your_db_user
+POSTGRES_PASSWORD=your_db_password
+POSTGRES_HOST=your_supabase_host
+POSTGRES_PORT=5432
+```
 
 ### 4. Utiliser l’image Docker prête à l’emploi depuis GHCR
 
@@ -56,15 +56,15 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
     Tirer l’image Docker
 
-    ```bash
-    docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
-    ```
+```bash
+docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
+```
 
     Démarrer les services avec Docker Compose
 
-    ```bash
-    docker-compose up -d
-    ```
+```bash
+docker-compose up -d
+```
 
     Cela va démarrer les services suivants :
 
