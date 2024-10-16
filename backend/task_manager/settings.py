@@ -169,4 +169,4 @@ SWAGGER_SETTINGS = {
 }
 
 # Désactiver CSRF pour les API
-CSRF_TRUSTED_ORIGINS = [os.environ['CSRF_TRUSTED_ORIGINS']]
+CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS').split(',')
