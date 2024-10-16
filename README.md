@@ -4,19 +4,19 @@ Ce projet est une application web de gestion des tâches (todolist) développée
 
 ## Fonctionnalités principales
 
-- Gestion des tâches : Visualiser, trier et filtrer les tâches sur une interface utilisateur dédiée.
-- API REST : Exposer des endpoints pour interagir avec les tâches via une API REST conforme à Django REST Framework.
-- Swagger UI : Documentation interactive de l’API accessible via Swagger UI.
-- Django : Interface admin pour gérer les tâches et utilisateurs via l’interface admin par défaut de Django.
+- [x] Gestion des tâches : Visualiser, trier et filtrer les tâches sur une interface utilisateur dédiée.
+- [x] API REST : Exposer des endpoints pour interagir avec les tâches via une API REST conforme à Django REST Framework.
+- [x] Swagger UI : Documentation interactive de l’API accessible via Swagger UI.
+- [x] Django : Interface admin pour gérer les tâches et utilisateurs via l’interface admin par défaut de Django.
 
 ## Prérequis
 
 Avant de commencer, assurez-vous d’avoir installé les outils suivants sur votre machine :
 
-- Docker
-- Docker Compose
-- Git
-- Une base de données PostgreSQL
+- [x] Docker
+- [x] Docker Compose
+- [x] Git
+- [x] Une base de données PostgreSQL
 
 ## Installation
 
@@ -62,8 +62,16 @@ docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
 
 Démarrer les services avec Docker Compose
 
+```yaml
+services:
+  backend:
+    image: ghcr.io/kevindebenedetti/team_todolist-api:latest
+    ports:
+    - "4003:8000"
+```
+
 ```bash
-docker-compose up -d
+docker-compose up --build -d
 ```
 
 Cela va démarrer les services suivants :
@@ -88,3 +96,10 @@ La documentation interactive de l’API est accessible via Swagger UI : http://l
 #### Interface d’administration Django :
 
 Pour accéder à l’interface d’administration, connectez-vous avec vos identifiants admin : http://localhost:4003/admin/
+
+## Documentation
+
+- [x] [Todo List](https://kevindebenedetti.github.io/documentation/django/todolist/)
+- [x] [API REST](http://localhost:4321/documentation/django/api-rest/)
+- [x] [Variables d'environnement](https://kevindebenedetti.github.io/documentation/django/env/)
+- [x] [Base de données](https://kevindebenedetti.github.io/documentation/django/database/)
