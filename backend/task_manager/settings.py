@@ -144,6 +144,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+]
+
 # API REST
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -166,6 +171,9 @@ SWAGGER_SETTINGS = {
         }
     },
     'USE_SESSION_AUTH': False,
+    'DEFAULT_API_URL': os.environ.get('DEFAULT_API_URL'),
+    'VALIDATOR': None,
+    'cache_timeout': 0,
 }
 
 # Désactiver CSRF pour les API
