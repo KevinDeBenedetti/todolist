@@ -67,7 +67,7 @@ services:
   backend:
     image: ghcr.io/kevindebenedetti/team_todolist-api:latest
     ports:
-    - "4003:8000"
+    - "<port>:8000"
 ```
 
 ```bash
