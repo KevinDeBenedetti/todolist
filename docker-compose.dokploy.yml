@@ -1,7 +1,7 @@
 services:
 
   api:
-    image: ghcr.io/kevindebenedetti/team_todolist:latest
+    image: ghcr.io/kevindebenedetti/team_todolist-api:latest
     pull_policy: always
     restart: always
     expose:

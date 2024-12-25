@@ -1,4 +1,4 @@
-name: Dokploy - vps_lab
+name: Dokploy
 
 on:
     push:
