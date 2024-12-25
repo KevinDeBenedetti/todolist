@@ -1,11 +1,14 @@
 services:
 
   api:
-    image: ghcr.io/kevindebenedetti/gymbro-api:latest
+    image: ghcr.io/kevindebenedetti/team_todolist:latest
     pull_policy: always
     restart: always
     expose:
       - 8000
+    command: >
+      sh -c "python manage.py collectstatic --noinput && 
+        gunicorn task_manager.wsgi:application --bind 0.0.0.0:8000"
     environment:
       SECRET_KEY: ${SECRET_KEY}
       DEBUG: ${DEBUG}

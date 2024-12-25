@@ -25,7 +25,7 @@ jobs:
             username: ${{ github.actor }}
             password: ${{ secrets.GITHUB_TOKEN }}
 
-        - name: Build and push Nuxt Docker image
+        - name: Build and push image
           run: |
             docker build -t ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest ./backend
             docker push ghcr.io/${{ vars.repository_owner }}/team_todolist:latest

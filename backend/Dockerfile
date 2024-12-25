@@ -2,8 +2,8 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+# ENV PYTHONDONTWRITEBYTECODE 1
+# ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt .
 
@@ -33,7 +33,7 @@ COPY . .
 # ENV POSTGRES_HOST=${POSTGRES_HOST}
 # ENV POSTGRES_PORT=${POSTGRES_PORT}
 
-RUN python manage.py collectstatic --noinput
+# RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000
 
