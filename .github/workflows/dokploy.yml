@@ -28,7 +28,7 @@ jobs:
         - name: Build and push image
           run: |
             docker build -t ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest ./backend
-            docker push ghcr.io/${{ vars.repository_owner }}/team_todolist:latest
+            docker push ghcr.io/${{ vars.repository_owner }}/team_todolist-api:latest
 
         - name: Logout from GHCR
           run: docker logout ghcr.io
