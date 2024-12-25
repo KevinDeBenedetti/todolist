@@ -50,25 +50,9 @@ POSTGRES_HOST=your_supabase_host
 POSTGRES_PORT=5432
 ```
 
-### 4. Utiliser l’image Docker prête à l’emploi depuis GHCR
-
-L’image Docker du projet todolist est déjà disponible et prête à l’emploi sur GitHub Container Registry (GHCR). Vous pouvez la tirer directement et l’utiliser sans avoir à reconstruire l’image vous-même.
-
-Tirer l’image Docker
-
-```bash
-docker pull ghcr.io/kevindebenedetti/team_todolist-api:latest
-```
+### 4. Lancer l'application
 
 Démarrer les services avec Docker Compose
-
-```yaml
-services:
-  backend:
-    image: ghcr.io/kevindebenedetti/team_todolist-api:latest
-    ports:
-    - "<port>:8000"
-```
 
 ```bash
 docker-compose up --build -d
